@@ -1,0 +1,12 @@
+name: bacha
+on:
+  push
+env:
+  LOVE: ${{ secrets.MY_SECRET_KEY }}
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: babe
+        run: echo "$LOVE"
+    

@@ -13,7 +13,9 @@ jobs:
        uses: actions/checkout@v3
      - name: Intsall NODEJS
        uses: actions/setup-node@v3
-     - name: run npm
+       with:
+        node-version: ${{ matrix.node-version }}
+     - name: Install dependencies
        run: npm ci
      - name: npm build
        run: npm run build

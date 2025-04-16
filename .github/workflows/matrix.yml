@@ -2,7 +2,7 @@ name: matrix
 on:
   push:
 jobs:
-  test-matrix:
+  build:
     continue-on-error: true
     strategy:
       matrix: 

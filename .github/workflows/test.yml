@@ -1,0 +1,11 @@
+name: testing
+on:
+  push
+jobs:
+  phone:
+    runs-on: ubuntu-latest
+    env:
+      WELCOME: "hello welcome to my frst env"
+    steps:
+      - name: greet
+        run: echo "$WELCOME"
